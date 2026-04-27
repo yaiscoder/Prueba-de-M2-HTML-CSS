@@ -163,14 +163,9 @@ tbody td a{
     font-size: 3rem;
 }
 
-.about_content article ul{
-    display: flex;
-    list-style: none;
-}
-
 .about_content article li{
     margin: 1rem;
-    text-decoration: none;
+    list-style: none;
     background-color: var(--extra-color);
     border-radius: 5px;
     color: var(--primary-color);
