@@ -26,8 +26,8 @@
 
 .header_content h1{
     color: var(--primary-color);
-    font-size: 3rem;
-    padding: 1.6rem;
+    font-size: 5vh;
+    padding: 1.6vh;
     margin: 0;
 }
 
@@ -37,13 +37,17 @@
 }
 
 .header_content .nav_list a{
-    margin: 1rem;
+    margin: 1vh;
     text-decoration: none;
     color: var(--primary-color);
 }
 
 .header_content .nav_list a:hover{
     color: var(--title-color);
+}
+
+.nav_list{
+    font-size: 2vh;
 }
 
 /* Hero */
@@ -53,14 +57,14 @@
     position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50rem;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero_overlay{
-    font-size: 3rem;
+    font-size: 5vh;
     color: var(--primary-color);
     font-family: var(--main-font);
 }
@@ -78,36 +82,49 @@
     justify-content: center;
     text-decoration: none;
     background-color: var(--primary-color);
-    border-radius: 2rem;
+    border-radius: 15vh;
     color: var(--extra-color);
 }
 
 /* Events */
 
 .events_table{
-    margin-top: 15rem;
-    margin-left: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 70%; 
 }
 
 #events{
     background-color: var(--background-color2);
-    min-height: 50rem;
+    min-height: 50vh;
 }
 
 #events h2{
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 7vh;
     font-family: var(--main-font);
     color: var(--title-color);
 }
 
+th{
+    background-color: var(--primary-color);
+}
+
+#tr1, #tr3{
+    background-color: #888484;
+}
+
+#tr2{
+    background-color: #413e3e;
+}
+
 thead, td {
-    margin-top: 1rem;
+    margin-top: 1vh;
     border: 1px solid black;
     border-radius: 10px;
-    font-size: 2rem;
-    width: 20rem;
+    font-size: 4vh;
     color: var(--extra-color);
     text-align: center;
 }
@@ -121,13 +138,13 @@ tbody td a{
 
 .about_band{
     background-color: var(--background-color1);
-    min-height: 50rem;
+    min-height: 50vh;
 }
 
 #about h2{
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 7vh;
     font-family: var(--main-font);
     color: var(--title-color);
 }
@@ -141,50 +158,57 @@ tbody td a{
 .about_content img{
     display: grid;
     grid-area: img;
-    width: 50rem;
-    margin-top: 7rem;
-    margin-left: 5rem;
+    height: auto;
+    width: 100%;
+    margin: 3vh;
 }
 
-.about_content article p{
-    display: flex;
-    flex-direction: column;
-    margin: 10rem;
-    margin-bottom: 2rem;
+#text{
+    margin: 3vh;
+    margin-left: 10vh;
     color: var(--extra-color);
-    font-size: 2rem;
+    font-size: 3vh;
 
 }
 
 .about_content article h3{
-    margin-left: 10rem;
+    margin-left: 10vh;
     font-family: var(--main-font);
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 6vh;
+}
+
+.about_content article ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .about_content article li{
-    margin: 1rem;
+    margin: 1vh;
     list-style: none;
     background-color: var(--extra-color);
     border-radius: 5px;
     color: var(--primary-color);
-    padding: 1rem;
-    margin-left: 10rem;
+    padding: 1vh;
+    margin-left: 10vh;
     cursor: pointer;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center
+    ;
 }
 
 /* Multimedia */
 
 #media{
     background-color: var(--background-color2);
-    min-height: 60rem;
+    min-height: 60vh;
 }
 
 #media h2{
     display: flex;
     justify-content: center;
-    font-size: 5rem;
+    font-size: 8vh;
     font-family: var(--main-font);
     color: var(--title-color);
 }
@@ -196,18 +220,78 @@ tbody td a{
 }
 
 .media_grid img{
-    width: 30rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 20px;
+    max-width: 90%;
+    height: 80%;
+    padding: 0;
     cursor: pointer;
     transition: 0.2s;
-    margin: 3rem;
+    margin: 3vh;
 }
 
 .media_grid img:hover{
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px gray;
+    box-shadow: 0 8px 20px var(--primary-color);
+}
+
+
+/* Contact section */
+
+#contact {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color1);
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vh;
+    color: var(--title-color);
+    font-family: var(--main-font);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,
+textarea {
+    width: 30%;
+    border-radius: 10px;
+    font-size: 4vh;
+    text-align: center;
+    background-color: var(--background-color2);
+    color: var(--extra-color);
+}
+
+label {
+    margin-top: 3vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    color: var(--extra-color);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 
@@ -218,10 +302,51 @@ tbody td a{
     position: relative;
     bottom: 0;
     background-color: var(--secundary-color);
+    color: var(--extra-color);
     display: flex;
     justify-content: center;
 }
 
 .footer_content p{
-    font-size: 2rem;
+    font-size: 3vh;
+}
+
+
+/* Media query */
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .header_content, .hero_overlay{
+        flex-direction: column;
+        text-align: center;
+    }
+    #events{
+        overflow-x: auto;
+    }
+
+    .events_table{
+        margin-bottom: 5vh;
+    }
+
+    .about_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_content img{
+        max-width: 90%;
+    }
+
+    
+    .about_content article ul{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+    }
+    .media_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        height: 30%;
+    }
 }
