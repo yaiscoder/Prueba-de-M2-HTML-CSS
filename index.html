@@ -6,9 +6,12 @@
     <title>Guns N' Roses</title>
     <link rel="icon" href="./imagenes/logo.png" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -41,91 +44,113 @@
 
       <!-- Events -->
       <section id="events">
-            <h2>Upcoming Events</h2>
+        <h2>Upcoming Events</h2>
 
-            <table class="events_table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>City</th>
-                        <th>Venue</th>
-                        <th>Tickets</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>19 May</td>
-                        <td>Colombia</td>
-                        <td>Campin Stadium</td>
-                        <td><a href="https://www.ticketmaster.co/" target="_blank">Buy</a></td>
-                    </tr>
-                    <tr>
-                        <td>16 Octuber</td>
-                        <td>Mexico</td>
-                        <td>Azteca Stadium</td>
-                        <td><a href="https://www.ticketmaster.co/" target="_blank">Buy</a></td>
-                    </tr>
-                    <tr>
-                        <td>27 December</td>
-                        <td>USA</td>
-                        <td>SoFi Stadium</td>
-                        <td><a href="https://www.ticketmaster.co/" target="_blank">Buy</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <table class="events_table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>Venue</th>
+              <th>Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="tr1">
+              <td>19 May</td>
+              <td>Colombia</td>
+              <td>Campin Stadium</td>
+              <td>
+                <a href="https://www.ticketmaster.co/" target="_blank">Buy</a>
+              </td>
+            </tr>
+            <tr id="tr2">
+              <td>16 Octuber</td>
+              <td>Mexico</td>
+              <td>Azteca Stadium</td>
+              <td>
+                <a href="https://www.ticketmaster.co/" target="_blank">Buy</a>
+              </td>
+            </tr>
+            <tr id="tr3">
+              <td>27 December</td>
+              <td>USA</td>
+              <td>SoFi Stadium</td>
+              <td>
+                <a href="https://www.ticketmaster.co/" target="_blank">Buy</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
       <!-- About the band -->
-       <section id="about" class="about_band">
-            <h2>About the Band</h2>
+      <section id="about" class="about_band">
+        <h2>About the Band</h2>
 
-            <div class="about_content">
-                <img src="./imagenes/banda.jpeg" alt="Band photo" />
+        <div class="about_content">
+          <img src="./imagenes/banda.jpeg" alt="Band photo" />
 
-                <article>
-                    <p>
-                    It is an American hard rock band formed in Hollywood, Los Angeles,
-                    in the Sunset Strip area in 1985. It was founded by vocalist and
-                    pianist Axl Rose, and guitarist Izzy Stradlin.
-                    It is one of the most successful rock bands of all time, having
-                    sold more than a hundred million records, is considered a global
-                    icon of music and is part of the prestigious Rock and Roll Hall
-                    of Fame.
-                    
-                    </p>
-
-                    <h3>Our Influences</h3>
-                    <li>Classic Hard Rock</li>
-                    <li>Glam Rock</li>
-                    <li>Punk Rock</li>
-                    </ul>
-                </article>
-            </div>
+          <article>
+            <p id="text">
+              It is an American hard rock band formed in Hollywood, Los Angeles,
+              in the Sunset Strip area in 1985. It was founded by vocalist and
+              pianist Axl Rose, and guitarist Izzy Stradlin. It is one of the
+              most successful rock bands of all time, having sold more than a
+              hundred million records, is considered a global icon of music and
+              is part of the prestigious Rock and Roll Hall of Fame.
+            </p>
+            <h3>Our Influences</h3>
+            <ul>
+              <li>Classic Hard Rock</li>
+              <li>Glam Rock</li>
+              <li>Punk Rock</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <!-- Media -->
-        <section id="media">
-            <h2>Multimedia</h2>
+      <section id="media">
+        <h2>Multimedia</h2>
 
-            <div class="media_grid">
-                <img src="./imagenes/img-1.jpg" alt="">
-                <img src="./imagenes/img-2.jpg" alt="">
-                <img src="./imagenes/img-3.webp" alt="">
-                <img src="./imagenes/img-4.jpg" alt="">
-                <img src="./imagenes/img-5.webp" alt="">
-                <img src="./imagenes/img-6.jpg" alt="">
-            </div>
-        </section>
+        <div class="media_grid">
+          <img src="./imagenes/img-1.jpg" alt="" />
+          <img src="./imagenes/img-2.jpg" alt="" />
+          <img src="./imagenes/img-3.webp" alt="" />
+          <img src="./imagenes/img-4.jpg" alt="" />
+          <img src="./imagenes/img-5.webp" alt="" />
+          <img src="./imagenes/img-6.jpg" alt="" />
+        </div>
+      </section>
 
-      
+      <section id="contact">
+        <h2>Contact</h2>
+        <!-- Contact form for the user -->
+        <form action="index.html" method="get">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone</label>
+          <input type="number" id="phone" name="phone" required min="1" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer id="footer">
-        <div class="footer_content">
-            <p>© 2026 Guns N' Roses</p>
-        </div>
+      <div class="footer_content">
+        <p>© 2026 Guns N' Roses</p>
+      </div>
     </footer>
-
   </body>
 </html>
+
